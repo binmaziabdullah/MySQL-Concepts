@@ -46,3 +46,5 @@ set features.year = car.year where features.id = 2;
     references car(id)
     on delete cascade
  );
+ # now deleting the record from parent so child also deleted.
+ delete from car where id = 1;
